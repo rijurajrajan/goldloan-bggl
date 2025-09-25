@@ -6,11 +6,11 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪙</text></svg>">
   <title>BSGL gold loan Dashboard</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css.css">
 </head>
 <body class="dashboard-page-bg">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
-
 
   <!-- Top Horizontal Navigation Bar -->
   <header id="top-nav" class="top-nav-bar">
@@ -37,27 +37,26 @@
       <i class="fas fa-times icon icon-close"></i>
     </div>
   </header>
-<!-- Sidebar -->
-<aside class="sidebar">
-  <div class="sidebar-header">
-    <h2>BSGL</h2>
-  </div>
-  <nav class="sidebar-nav">
-    <a href="index.html" class="active"><i class="fa fa-home"></i><span>Home</span></a>
-    <a href="loans.html"><i class="fas fa-hand-holding-dollar"></i><span>Loans</span></a>
-    <a href="services.html"><i class="fa fa-cogs"></i><span>Services</span></a>
-    <a href="about.html"><i class="fa fa-users"></i><span>About</span></a>
-    <a href="contact.html"><i class="fa fa-envelope"></i><span>Contact</span></a>
-    <a href="careers.html"><i class="fa fa-briefcase"></i><span>Careers</span></a>
-    <a href="media.html"><i class="fa fa-video"></i><span>Media</span></a>
-    <a href="news.html"><i class="fa fa-newspaper"></i><span>News</span></a>
-  </nav>
-</aside>
 
-<!-- Main Content Wrapper -->
-<div class="main-content">
-  <!-- kee
-  
+  <!-- Mobile Sidebar -->
+  <div id="mobile-sidebar" class="mobile-sidebar">
+    <div class="mobile-sidebar-header">
+      <div id="close-sidebar-btn" class="close-btn">&times;</div>
+    </div>
+    <nav>
+      <a href="index.html" class="active"><i class="fa fa-home"></i><span class="text">Home</span></a>
+      <a href="loans.html"><i class="fas fa-hand-holding-dollar"></i><span class="text">Loans</span></a>
+      <a href="services.html"><i class="fa fa-cogs"></i><span class="text">Services</span></a>
+      <a href="about.html"><i class="fa fa-users"></i><span class="text">About</span></a>
+      <a href="contact.html"><i class="fa fa-envelope"></i><span class="text">Contact</span></a>
+      <a href="careers.html"><i class="fa fa-briefcase"></i><span class="text">Careers</span></a>
+      <a href="media.html"><i class="fa fa-video"></i><span class="text">Media</span></a>
+      <a href="news.html"><i class="fa fa-newspaper"></i><span class="text">News</span></a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
     <!-- Static Hero Image -->
     <div class="hero-image-container">
       <img src="https://images.unsplash.com/photo-1621901132926-700920336a5e?q=80&w=1470&auto=format&fit=crop" alt="High-quality gold assets representing financial security">
@@ -127,6 +126,6 @@
   <div id="footer-container"></div>
   <script src="script.js"></script>
 
-
 </body>
 </html>
+
