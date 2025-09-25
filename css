@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f6fa;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 250px;
+  background-color: #1A1F36;
+  color: white;
+  position: fixed;
+  height: 100%;
+  transition: width 0.3s;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.sidebar.collapsed {
+  width: 80px;
+}
+.sidebar nav {
+  margin-top: 20px;
+  flex-grow: 1;
+}
+.sidebar nav a {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: #cfd4ed;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+.sidebar nav a .icon {
+  width: 25px;
+  text-align: center;
+  font-size: 18px;
+}
+.sidebar nav a .text {
+  margin-left: 15px;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.sidebar.collapsed nav a .text {
+  opacity: 0;
+}
+.sidebar nav a:hover {
+  background-color: #2d3250;
+  color: white;
+}
+.sidebar nav a.active {
+  background-color: #3b4b78;
+}
+.sidebar .footer {
+  padding: 20px;
+  border-top: 1px solid #2d324d;
+}
+.sidebar .footer button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  color: #cfd4ed;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.2s;
+}
+.sidebar .footer button .icon {
+  width: 25px;
+  text-align: center;
+  font-size: 18px;
+}
+.sidebar .footer button:hover {
+  background-color: #2d3250;
+  color: white;
+}
+
+/* Main Content Styling */
+.main {
+  margin-left: 270px;
+  padding: 20px;
+  flex: 1;
+  background-color: #f5f6fa;
+  transition: margin-left 0.3s;
+}
+
+/* Adjust main content margin when sidebar is collapsed */
+.sidebar.collapsed + .main {
+  margin-left: 100px; /* 80px collapsed width + 20px gap */
+}
+
+/* Slider Styling */
+.slider {
+
+}
+ 
+
+ 
